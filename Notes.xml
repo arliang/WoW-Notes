@@ -1,0 +1,11 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+
+	<Script file="Notes.lua"/>
+	<Script file="Notes-Undo.lua"/>
+	<Script file="Search.lua"/>
+	<Script file="Communication.lua"/>
+	<Script file="Notes-KeyBindings.lua"/>
+	<Script file="Notes-InsertMenu.lua"/>
+	<Script file="Notes-InsertMenuAddons.lua"/> <!-- This is a temporary script! -->
+
+</Ui>

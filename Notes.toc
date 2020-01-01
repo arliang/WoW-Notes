@@ -1,0 +1,21 @@
+## Title: Notes
+## Notes: /notes|n|cffeeca00Truii|r - |cff8eb9ffWhisperwind|r
+##
+## Interface: 50001
+## SavedVariables: NotesData, NotesPref
+## SavedVariablesPerCharacter: NotesPrefCS
+##
+## Version: 1.3.18
+## Author: aLeX^rS(Truii-Whisperwind)
+## OptionalDeps: Ace3
+## X-eMail: alexrs @ gmail DOT com
+## X-Donate: PayPal:alexrs @ gmail DOT com
+##
+## X-Curse-Packaged-Version: r56
+## X-Curse-Project-Name: Simply Notes
+## X-Curse-Project-ID: notes-simple
+## X-Curse-Repository-ID: wow/notes-simple/mainline
+Support\Load.xml
+Lib\Lib.xml
+Notes.xml
+MiniMapIcon.xml

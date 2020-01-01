@@ -1,0 +1,44 @@
+------------------------------------------------------------------------
+r56 | alexrs84 | 2012-09-16 16:46:42 +0000 (Sun, 16 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/Notes-InsertMenu.lua
+   M /trunk/Notes.toc
+
+-- Notes 1.3.18 -- 
+- "RangedSlot" no longer exists in GetInventory, fixed to comply with new patch
+------------------------------------------------------------------------
+r55 | alexrs84 | 2012-09-12 05:18:36 +0000 (Wed, 12 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/Notes.toc
+
+-- Notes 1.3.17 -- 
+- TOC fix, not out of date
+------------------------------------------------------------------------
+r54 | alexrs84 | 2012-09-10 18:54:29 +0000 (Mon, 10 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/Notes-InsertMenu.lua
+   M /trunk/Notes.toc
+
+-- Notes 1.3.16 -- 
+- API Fix to comply with latest WoW patch
+------------------------------------------------------------------------
+r53 | alexrs84 | 2012-08-16 23:06:56 +0000 (Thu, 16 Aug 2012) | 2 lines
+Changed paths:
+   A /trunk/Lib/CallbackHandler-1.0
+   A /trunk/Lib/CallbackHandler-1.0/CallbackHandler-1.0.lua
+   A /trunk/Lib/CallbackHandler-1.0/CallbackHandler-1.0.xml
+   M /trunk/Lib/Lib.xml
+
+-- Notes 1.3.15 -- 
+- Embedded CallbackHandler-1.0 library
+------------------------------------------------------------------------
+r52 | alexrs84 | 2012-08-15 13:36:48 +0000 (Wed, 15 Aug 2012) | 3 lines
+Changed paths:
+   M /trunk/Communication.lua
+   M /trunk/MiniMapIcon.xml
+   M /trunk/Notes.toc
+
+-- Notes 1.3.14 -- 
+- Added Acknowledgments to Send Note feature; After a moderate wait, if the recipient of your note does not send back an ACK message, they are issued a standard whisper informing them that they've been sent a note, but can't accept it because they need Simply Notes 1.3.14 or greater!
+- Fixed UI Green Background behind MiniMap icon in MoP Beta(Mac OSX only?)
+------------------------------------------------------------------------

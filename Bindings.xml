@@ -1,0 +1,7 @@
+<Bindings>
+	<Binding name="SIMPLYNOTES_TOGGLE" header="SIMPLYNOTES_HEADER">Notes:Toggle( );</Binding>
+	<Binding name="SIMPLYNOTES_NEW">Notes:NoteNew( );</Binding>
+	<Binding name="SIMPLYNOTES_PREV">Notes:NotePrev( );</Binding>
+	<Binding name="SIMPLYNOTES_NEXT">Notes:NoteNext( );</Binding>
+	<Binding name="SIMPLYNOTES_LOCK">Notes:NoteLock( );</Binding>
+</Bindings>
