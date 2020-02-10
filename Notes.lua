@@ -111,7 +111,7 @@ NotesPref["ManualSave"] = nil; -- 1(on) or nil(off)
 
 local function PrefSetupFonts()
 	NotesPref["Fonts"] = { 
-		"trebuc.ttf", 
+		"yahei.ttf", 
 		"cour.ttf", 
 		"yellowjacket.ttf",
 		"porky.ttf",
