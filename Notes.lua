@@ -1370,7 +1370,7 @@ end
 ================================== FRAMES ========================================
 ==================================================================================
 ]]
-Notes.Notes = CreateFrame( "Frame", "NotesFrame", UIParent )
+Notes.Notes = CreateFrame( "Frame", "NotesFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Notes:Hide( )
 Notes.Notes:SetPoint( "CENTER", "UIParent", "CENTER" )
 Notes.Notes:SetFrameStrata( NOTES_STRATA )
@@ -1443,7 +1443,7 @@ Notes.OverlayRight:Hide()
 
 
 
-Notes.Drag = CreateFrame( "Button", nil, Notes.Notes )
+Notes.Drag = CreateFrame( "Button", nil, Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Drag:SetPoint( "TOPLEFT", Notes.Notes, "TOPLEFT", 10, -5 )
 Notes.Drag:SetPoint( "TOPRIGHT", Notes.Notes, "TOPRIGHT", -10, -5 )
 Notes.Drag:SetHeight( 24 )
@@ -1480,7 +1480,7 @@ Notes.Title:SetText( "Simply Notes" )
 
 
 
-Notes.Notes.Done = CreateFrame( "Button", "", Notes.Notes )
+Notes.Notes.Done = CreateFrame( "Button", "", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" )
 --Notes.Notes.Done:SetText( "Close" )
 Notes.Notes.Done:SetNormalTexture( NOTES_ART_PATH.."icon-hide")
 Notes.Notes.Done:SetHighlightTexture( NOTES_ART_PATH.."icon-overlay" )
@@ -1496,7 +1496,7 @@ end )
 Notes.Notes.Done:SetScript( "OnLeave", function( self ) GameTooltip:Hide()  end )
 
 
-Notes.Notes.Delete = CreateFrame( "Button", "", Notes.Notes )
+Notes.Notes.Delete = CreateFrame( "Button", "", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" )
 --Notes.Notes.Delete:SetText( "Del" )
 Notes.Notes.Delete:SetNormalTexture( NOTES_ART_PATH.."icon-delete")
 Notes.Notes.Delete:SetHighlightTexture( NOTES_ART_PATH.."icon-overlay" )
@@ -1513,7 +1513,7 @@ end )
 Notes.Notes.Delete:SetScript( "OnLeave", function( self ) GameTooltip:Hide()  end )
 
 
-Notes.Notes.NewNote = CreateFrame( "Button", "", Notes.Notes )
+Notes.Notes.NewNote = CreateFrame( "Button", "", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Notes.NewNote:SetNormalTexture( NOTES_ART_PATH.."icon-add")
 Notes.Notes.NewNote:SetHighlightTexture( NOTES_ART_PATH.."icon-overlay" )
 Notes.Notes.NewNote:SetPoint( "BOTTOMRIGHT", Notes.Notes.Delete, "BOTTOMLEFT", -NOTES_BUTTON_SPACING, 0 )
@@ -1533,7 +1533,7 @@ end )
 Notes.Notes.NewNote:SetScript( "OnLeave", function( self ) GameTooltip:Hide()  end )
 
 
-Notes.Notes.Next = CreateFrame( "Button", "", Notes.Notes )
+Notes.Notes.Next = CreateFrame( "Button", "", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" )
 --Notes.Notes.Next:SetText( "Next >" )
 Notes.Notes.Next:SetNormalTexture( NOTES_ART_PATH.."icon-next")
 Notes.Notes.Next:SetHighlightTexture( NOTES_ART_PATH.."icon-overlay" )
@@ -1548,7 +1548,7 @@ Notes.Notes.Next:SetScript( "OnEnter", function( self )
 end )
 Notes.Notes.Next:SetScript( "OnLeave", function( self ) GameTooltip:Hide()  end )
 
-Notes.Notes.Prev = CreateFrame( "Button", "", Notes.Notes )
+Notes.Notes.Prev = CreateFrame( "Button", "", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" )
 --Notes.Notes.Prev:SetText("< Prev")
 Notes.Notes.Prev:SetNormalTexture( NOTES_ART_PATH.."icon-prev")
 Notes.Notes.Prev:SetHighlightTexture( NOTES_ART_PATH.."icon-overlay" )
@@ -1565,7 +1565,7 @@ end )
 Notes.Notes.Prev:SetScript( "OnLeave", function( self ) GameTooltip:Hide()  end )
 
 
-Notes.Notes.Color = CreateFrame( "Button", "", Notes.Notes )
+Notes.Notes.Color = CreateFrame( "Button", "", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Notes.Color:SetNormalTexture( NOTES_ART_PATH.."icon-swatch")
 Notes.Notes.Color:SetHighlightTexture( NOTES_ART_PATH.."icon-overlay" )
 Notes.Notes.Color:SetDisabledTexture( NOTES_ART_PATH.."icon-swatch-disabled" ) 
@@ -1583,7 +1583,7 @@ Notes.Notes.Color:SetScript( "OnLeave", function( self ) GameTooltip:Hide()  end
 
 
 
-Notes.Notes.Lock = CreateFrame( "Button", "", Notes.Notes )
+Notes.Notes.Lock = CreateFrame( "Button", "", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" )
 --Notes.Notes.Lock:SetText("Lock")
 Notes.Notes.Lock:SetNormalTexture( NOTES_ART_PATH.."icon-unlocked")
 Notes.Notes.Lock:SetHighlightTexture( NOTES_ART_PATH.."icon-overlay" )
@@ -1609,7 +1609,7 @@ Notes.Notes.Lock:SetScript( "OnLeave", function( self ) GameTooltip:Hide()  end 
 
 
 
-Notes.Notes.SearchIcon = CreateFrame( "Button", "", Notes.Notes )
+Notes.Notes.SearchIcon = CreateFrame( "Button", "", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Notes.SearchIcon:SetNormalTexture( NOTES_ART_PATH.."icon-search")
 Notes.Notes.SearchIcon:SetHighlightTexture( NOTES_ART_PATH.."icon-overlay" )
 Notes.Notes.SearchIcon:SetPoint( "BOTTOMRIGHT", Notes.Notes.Lock, "BOTTOMLEFT", -NOTES_BUTTON_SPACING, 0 )
@@ -1632,7 +1632,7 @@ Notes.Notes.SearchIcon:SetScript( "OnLeave", function( self ) GameTooltip:Hide()
 
 
 
-Notes.Notes.CommIcon = CreateFrame( "Button", "", Notes.Notes )
+Notes.Notes.CommIcon = CreateFrame( "Button", "", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Notes.CommIcon:SetNormalTexture( NOTES_ART_PATH.."icon-communicate")
 Notes.Notes.CommIcon:SetHighlightTexture( NOTES_ART_PATH.."icon-overlay" )
 Notes.Notes.CommIcon:SetPoint( "BOTTOMRIGHT", Notes.Notes.SearchIcon, "BOTTOMLEFT", -NOTES_BUTTON_SPACING, 0 )
@@ -1654,7 +1654,7 @@ Notes.Notes.CommIcon:SetScript( "OnLeave", function( self ) GameTooltip:Hide()  
 
 
 
-Notes.Notes.SaveIcon = CreateFrame( "Button", "", Notes.Notes )
+Notes.Notes.SaveIcon = CreateFrame( "Button", "", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Notes.SaveIcon:SetNormalTexture( NOTES_ART_PATH.."icon-save")
 Notes.Notes.SaveIcon:SetDisabledTexture( NOTES_ART_PATH.."icon-save-disabled" ) 
 Notes.Notes.SaveIcon:SetHighlightTexture( NOTES_ART_PATH.."icon-overlay" )
@@ -1675,7 +1675,7 @@ Notes.Notes.SaveIcon:SetScript( "OnLeave", function( self ) GameTooltip:Hide()  
 
 
 
-Notes.Notes.DragBottomLeft = CreateFrame("Button", "NotesResizeGripLeft", Notes.Notes ) -- Grip Buttons from Omen2/Recount
+Notes.Notes.DragBottomLeft = CreateFrame("Button", "NotesResizeGripLeft", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" ) -- Grip Buttons from Omen2/Recount
 Notes.Notes.DragBottomLeft:Show()
 Notes.Notes.DragBottomLeft:SetFrameLevel( Notes.Notes:GetFrameLevel() + 10)
 Notes.Notes.DragBottomLeft:SetNormalTexture( NOTES_ART_PATH.."ResizeGripLeft" )
@@ -1699,7 +1699,7 @@ Notes.Notes.DragBottomLeft:SetScript("OnMouseUp", function(self,button)
 end )
 
 
-Notes.Notes.DragBottomRight = CreateFrame("Button", "NotesResizeGripRight", Notes.Notes ) -- Grip Buttons from Omen2/Recount
+Notes.Notes.DragBottomRight = CreateFrame("Button", "NotesResizeGripRight", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" ) -- Grip Buttons from Omen2/Recount
 Notes.Notes.DragBottomRight:Show()
 Notes.Notes.DragBottomRight:SetFrameLevel( Notes.Notes:GetFrameLevel() + 10)
 Notes.Notes.DragBottomRight:SetNormalTexture( NOTES_ART_PATH.."ResizeGripRight" )
@@ -1734,7 +1734,7 @@ Notes.Notes.Mesg:SetPoint( "LEFT", Notes.Notes, "LEFT", 45, 0 )
 Notes.Notes.Mesg:SetHeight( 29 )
 Notes.Notes.Mesg:SetText( " " )
 
-Notes.Notes.NoteNavigation = CreateFrame( "Button", "", Notes.Notes )
+Notes.Notes.NoteNavigation = CreateFrame( "Button", "", Notes.Notes, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Notes.NoteNavigation:SetNormalTexture( "Interface/FriendsFrame/UI-FriendsList-Large-Up" )
 Notes.Notes.NoteNavigation:SetPushedTexture( "Interface/FriendsFrame/UI-FriendsList-Large-Down" )
 Notes.Notes.NoteNavigation:SetHighlightTexture( "Interface/FriendsFrame/UI-FriendsList-Highlight" )
@@ -1744,14 +1744,14 @@ Notes.Notes.NoteNavigation:SetHeight( 25 )
 --Notes.Notes.NoteNavigation:SetScript( "OnClick", Notes.NoteNavDropDown )
 
 
-Notes.Notes.Scroll = CreateFrame( "ScrollFrame", "NotesInputScroll", Notes.Notes, "UIPanelScrollFrameTemplate" )
+Notes.Notes.Scroll = CreateFrame( "ScrollFrame", "NotesInputScroll", Notes.Notes, "UIPanelScrollFrameTemplate", BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Notes.Scroll:SetPoint( "TOPLEFT", Notes.Drag, "BOTTOMLEFT", 6, -8 )
 Notes.Notes.Scroll:SetPoint( "RIGHT", Notes.Notes, "RIGHT", -30, 0 )
 Notes.Notes.Scroll:SetPoint( "BOTTOM", Notes.Notes.Done, "TOP", 0, 10 )
 Notes.Notes.Scroll:EnableMouse( true );
 Notes.Notes.Scroll:SetScript( "OnMouseDown", function() Notes.Notes.Box:SetFocus() end )
 
-Notes.Notes.Box = CreateFrame( "EditBox", "NotesEditBox", Notes.Notes.Scroll )
+Notes.Notes.Box = CreateFrame( "EditBox", "NotesEditBox", Notes.Notes.Scroll, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Notes.Box:SetWidth( Notes.Notes.Scroll:GetWidth() )
 Notes.Notes.Box:SetHeight( 85 )
 Notes.Notes.Box:SetMultiLine( true )
@@ -1823,7 +1823,7 @@ hooksecurefunc( "ChatEdit_OnEditFocusLost", hook_ChatEdit_OnEditFocusLost )
 -- Proxy frame is to intercept "Ctrl+Z/Y" - probably a better way of doing this...
 -- This is somewhat experimental, but seems to be working.. With EnableKeyboard(true) and Propagation to the next frame(the edit box)
 -- i can detect the "Ctrl" key pressed at the same time as z, the frame is hidden when the edit box loses focus - the onKeyDown event no longer fires
-Notes.Notes.BoxProxy = CreateFrame( "Frame", "NotesBoxProxy", UIParent )
+Notes.Notes.BoxProxy = CreateFrame( "Frame", "NotesBoxProxy", UIParent, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Notes.BoxProxy:Hide( )
 Notes.Notes.BoxProxy:SetFrameStrata( "TOOLTIP" )
 Notes.Notes.BoxProxy:EnableKeyboard( true )
@@ -1833,7 +1833,7 @@ Notes.Notes.BoxProxy:SetScript( "OnKeyDown", Notes.OnKeyDown )
 
 --	@OpenMailFrame
 ----------------------------------------------------------------------
-Notes.InsertMailNote = CreateFrame( "Button", "InsertNoteFromMail", OpenMailFrame ); --, "OptionsButtonTemplate")
+Notes.InsertMailNote = CreateFrame( "Button", "InsertNoteFromMail", OpenMailFrame, BackdropTemplateMixin and "BackdropTemplate" ); --, "OptionsButtonTemplate")
 Notes.InsertMailNote:SetWidth( 20 )
 Notes.InsertMailNote:SetHeight( 20 )
 Notes.InsertMailNote:SetAlpha(0.7)
@@ -1959,7 +1959,7 @@ WorldFrame:HookScript( "OnMouseDown", function( self, button ) if Notes.Notes.Bo
 
 -- @General Frame, for events
 ----------------------------------------------------------------------
-Notes.Frame = CreateFrame( "Frame" );
+Notes.Frame = CreateFrame( "Frame", BackdropTemplateMixin and "BackdropTemplate" );
 Notes.Frame:Show( );
 Notes.Frame:SetScript( "OnEvent", Notes.OnEvent );
 Notes.Frame:RegisterEvent( "ADDON_LOADED" );
@@ -2223,7 +2223,7 @@ Notes.Notes.Color.initMenuFunc = function( self, level )
 	interact with a user for confirmation, or input... sigh...
 ]]
 
-Notes.ConfirmBox = CreateFrame( "Frame", "NotesConfirmFrame", UIParent )
+Notes.ConfirmBox = CreateFrame( "Frame", "NotesConfirmFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.ConfirmBox:Hide( )
 Notes.ConfirmBox:SetPoint( "CENTER", "UIParent", "CENTER" )
 Notes.ConfirmBox:SetFrameStrata( "DIALOG" )
@@ -2311,20 +2311,20 @@ end
 
 
 
-Notes.ConfirmBox.TitleBar = CreateFrame( "Button", nil, Notes.ConfirmBox )
+Notes.ConfirmBox.TitleBar = CreateFrame( "Button", nil, Notes.ConfirmBox, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.ConfirmBox.TitleBar:SetPoint( "TOPLEFT", Notes.ConfirmBox, "TOPLEFT", 10, -5 )
 Notes.ConfirmBox.TitleBar:SetPoint( "TOPRIGHT", Notes.ConfirmBox, "TOPRIGHT", -10, -5 )
 Notes.ConfirmBox.TitleBar:SetHeight( 13 )
 Notes.ConfirmBox.TitleBar:SetNormalTexture( "Interface\\FriendsFrame\\UI-FriendsFrame-HighlightBar" ) --NOTES_ART_PATH.."bar")
 Notes.ConfirmBox.TitleBar:SetAlpha( 0.5 )
 
-Notes.ConfirmBox.Cancel = CreateFrame( "Button", "", Notes.ConfirmBox, "OptionsButtonTemplate" )
+Notes.ConfirmBox.Cancel = CreateFrame( "Button", "", Notes.ConfirmBox, "OptionsButtonTemplate", BackdropTemplateMixin and "BackdropTemplate" )
 Notes.ConfirmBox.Cancel:SetText( "No" )
 Notes.ConfirmBox.Cancel:SetPoint( "BOTTOMRIGHT", Notes.ConfirmBox, "BOTTOMRIGHT", -15, 25 )
 Notes.ConfirmBox.Cancel:SetScript( "OnClick", Notes.ConfirmBox_Cancel )
 
 
-Notes.ConfirmBox.Confirm = CreateFrame( "Button", "", Notes.ConfirmBox, "OptionsButtonTemplate" )
+Notes.ConfirmBox.Confirm = CreateFrame( "Button", "", Notes.ConfirmBox, "OptionsButtonTemplate", BackdropTemplateMixin and "BackdropTemplate" )
 Notes.ConfirmBox.Confirm:SetText( "Yes" )                                                                    
 Notes.ConfirmBox.Confirm:SetPoint( "BOTTOMRIGHT", Notes.ConfirmBox.Cancel, "BOTTOMLEFT", 0, 0 )
 Notes.ConfirmBox.Confirm:SetScript( "OnClick", Notes.ConfirmBox_Confirm)

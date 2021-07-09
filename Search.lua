@@ -197,7 +197,7 @@ end
 
 
 
-Notes.Notes.SearchFrame = CreateFrame( "Frame", "NotesSearchFrame", UIParent )
+Notes.Notes.SearchFrame = CreateFrame( "Frame", "NotesSearchFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Notes.SearchFrame:Hide( )
 Notes.Notes.SearchFrame:SetPoint( "CENTER", Notes.Notes, "CENTER" )
 Notes.Notes.SearchFrame:SetFrameStrata( "DIALOG" )
@@ -220,7 +220,7 @@ Notes.Notes.SearchFrame:SetClampedToScreen( true )
 FSearch = Notes.Notes.SearchFrame;
 
 
-FSearch.TitleBar = CreateFrame( "Button", nil, FSearch )
+FSearch.TitleBar = CreateFrame( "Button", nil, FSearch, BackdropTemplateMixin and "BackdropTemplate" )
 FSearch.TitleBar:SetPoint( "TOPLEFT", FSearch, "TOPLEFT", 10, -5 )
 FSearch.TitleBar:SetPoint( "TOPRIGHT", FSearch, "TOPRIGHT", -10, -5 )
 FSearch.TitleBar:SetHeight( 13 )
@@ -249,7 +249,7 @@ do
 		fntstr:SetText( "Search phrase: " )
 		
 		
-		FSearch.Box = CreateFrame( "EditBox", "NotesSearchEditBox", FSearch )
+		FSearch.Box = CreateFrame( "EditBox", "NotesSearchEditBox", FSearch, BackdropTemplateMixin and "BackdropTemplate" )
 		FSearch.Box:SetWidth( 277 )
 		FSearch.Box:SetHeight( 32 )
 		FSearch.Box:SetPoint( "TOP", FSearch.TitleBar, "BOTTOM", -10, -15 )
@@ -494,7 +494,7 @@ do
 		FSearch.Scroll:SetPoint( "BOTTOM", FSearch.CloseButton, "TOP", 0, 10 );
 		
 		
-		FSearch.Results = CreateFrame( "SimpleHTML", "FSearchResults", FSearch.Scroll );
+		FSearch.Results = CreateFrame( "SimpleHTML", "FSearchResults", FSearch.Scroll, BackdropTemplateMixin and "BackdropTemplate" );
 		FSearch.Scroll:SetScrollChild( FSearch.Results );
 		FSearch.Results:Show();
 		--FSearch.Results:SetAllPoints( FSearch.Scroll );

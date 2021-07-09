@@ -282,7 +282,7 @@ end
 
 
 
-Notes.Notes.CommOutFrame = CreateFrame( "Frame", "NotesCommOutFrame", UIParent )
+Notes.Notes.CommOutFrame = CreateFrame( "Frame", "NotesCommOutFrame", UIParent,  BackdropTemplateMixin and "BackdropTemplate" )
 Notes.Notes.CommOutFrame:Hide( )
 Notes.Notes.CommOutFrame:SetPoint( "CENTER", Notes.Notes, "CENTER" )
 Notes.Notes.CommOutFrame:SetFrameStrata( "DIALOG" )
@@ -315,7 +315,7 @@ FCommOut:RegisterEvent( "CHAT_MSG_ADDON" );
 
 
 
-FCommOut.TitleBar = CreateFrame( "Button", nil, FCommOut )
+FCommOut.TitleBar = CreateFrame( "Button", nil, FCommOut,  BackdropTemplateMixin and "BackdropTemplate" )
 FCommOut.TitleBar:SetPoint( "TOPLEFT", FCommOut, "TOPLEFT", 10, -5 )
 FCommOut.TitleBar:SetPoint( "TOPRIGHT", FCommOut, "TOPRIGHT", -10, -5 )
 FCommOut.TitleBar:SetHeight( 13 )
@@ -359,7 +359,7 @@ do
 		
 		
 		
-		FCommOut.Box = CreateFrame( "EditBox", "NotesFriendEditBox", FCommOut )
+		FCommOut.Box = CreateFrame( "EditBox", "NotesFriendEditBox", FCommOut,  BackdropTemplateMixin and "BackdropTemplate" )
 		FCommOut.Box:SetWidth( 227 )
 		FCommOut.Box:SetHeight( 32 )
 		FCommOut.Box:SetPoint( "TOP", FCommOut.TitleBar, "BOTTOM", -10, -15 )
@@ -556,7 +556,7 @@ do
 		FCommOut.Scroll:SetPoint( "BOTTOM", FCommOut.CloseButton, "TOP", 0, 10 );
 		
 		
-		FCommOut.Results = CreateFrame( "SimpleHTML", "FCommOutResults", FCommOut.Scroll );
+		FCommOut.Results = CreateFrame( "SimpleHTML", "FCommOutResults", FCommOut.Scroll,  BackdropTemplateMixin and "BackdropTemplate" );
 		FCommOut.Scroll:SetScrollChild( FCommOut.Results );
 		FCommOut.Results:Show();
 		--FCommOut.Results:SetAllPoints( FCommOut.Scroll );
